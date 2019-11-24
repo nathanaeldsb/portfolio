@@ -53,13 +53,13 @@
     <!-- DESCRIPTION PARCHMENT START-->
 
     <div class="container" id="container">
-        <span class="container__open" id="openscroll">&#9013;
-            <audio id="openscrollaudio">
+        <span class="sound-area container__open" id="openscroll" data-eclick="true">&#9013;
+            <audio class="sound-area__audio" id="openscrollaudio">
                 <source src="../assets/audio/openscroll.mp3">
             </audio>
         </span>
-        <span class="container__close" id="closescroll">&#9932;
-            <audio id="closeScrollaudio">
+        <span class="sound-area container__close" id="closescroll" data-eclick="true">&#9932;
+            <audio class="sound-area__audio" id="closeScrollaudio">
                 <source src="../assets/audio/closescroll.mp3">
             </audio>
         </span>
@@ -86,38 +86,38 @@
 
     <!-- SOUND EFFECTS -->
 
-    <div class="wavesound" id="wavesound">
-        <audio id="waveaudio">
+    <div class="sound-area wavesound" id="wavesound" data-emouseenter="true">
+        <audio class="sound-area__audio" id="waveaudio">
             <source src="../assets/audio/wavesound.mp3"> <!-- Water Waving effect -->
         </audio>
     </div>
 
-    <div class="watersplash" id="watersplash">
-        <audio id="watersplashaudio">
+    <div class="sound-area watersplash" id="watersplash" data-emouseenter="true">
+        <audio class="sound-area__audio" id="watersplashaudio">
             <source src="../assets/audio/watersplash.mp3"> <!-- Watefall effect -->
         </audio>
     </div>
 
-    <div class="branchesleaves" id="branchesleaves">
-        <audio id="leavesaudio">
+    <div class="sound-area branchesleaves" id="branchesleaves" data-emouseenter="true">
+        <audio class="sound-area__audio" id="leavesaudio">
             <source src="../assets/audio/branchesLeaves.mp3"> <!-- Branches Leaves effect -->
         </audio>
     </div>
 
-    <div class="owlhoot" id="owlhoot">
-        <audio id="hootingaudio">
+    <div class="sound-area owlhoot" id="owlhoot" data-emouseenter="true">
+        <audio class="sound-area__audio" id="hootingaudio">
             <source src="../assets/audio/owlhoot.mp3"> <!-- OWL Hooting effect -->
         </audio>
     </div>
 
-    <div class="waterfall" id="waterfall">
-        <audio id="waterfallaudio">
+    <div class="sound-area waterfall" id="waterfall" data-emouseenter="true">
+        <audio class="sound-area__audio" id="waterfallaudio">
             <source src="../assets/audio/waterfallsound.mp3" /> <!-- Watefall effect -->
         </audio>
     </div>
 
-    <div class="footsteps" id="footsteps">
-        <audio id="footstepsaudio">
+    <div class="sound-area footsteps" id="footsteps" data-emouseenter="true">
+        <audio class="sound-area__audio" id="footstepsaudio">
             <source src="../assets/audio/footstepsound.mp3" /> <!-- Footsteps effect -->
         </audio>
     </div>
@@ -127,38 +127,38 @@
     <!-- MUSHROOMS -->
 
     <form>
-        <label for="option1" class="item item--mushrooms">
+        <label for="option1" class="sound-area item item--mushrooms" data-emouseenter="true">
             <input id="option1" class="item__radio item__radio--mushrooms" type="radio" name="itemCollection"
                 value="mushrooms">
 
             <img src="../assets/img/fungis.png" class="item__image item__image--mushrooms" id="mushroomid"
                 alt="mushrooms picture">
 
-            <audio id="shimmeraudio">
+            <audio class="sound-area__audio" id="shimmeraudio">
                 <source src="assets/audio/shimmer.mp3"> <!-- ITEM MUSHROOMS -->
             </audio>
         </label>
 
-        <label for="option2" class="item item--mistletoe">
+        <label for="option2" class="sound-area item item--mistletoe" data-emouseenter="true">
             <input id="option2" class="item__radio item__radio--mistletoe" type="radio" name="itemCollection"
                 value="mistletoe">
 
             <img src="../assets/img/mistletoeright.png" class="item__image item__image--mistletoe" id="mistletoe"
                 alt="mistletoe picture">
 
-            <audio id="shimmeraudio">
+            <audio class="sound-area__audio" id="shimmeraudio">
                 <source src="assets/audio/shimmer.mp3"> <!-- ITEM MISTLETOE -->
             </audio>
         </label>
 
-        <label for="option3" class="item item--gems">
+        <label for="option3" class="sound-area item item--gems" data-emouseenter="true">
             <input id="option3" class="item__radio item__radio--gems" type="radio" name="itemCollection"
                 value="gems">
 
             <img src="../assets/img/greengems.png" class="item__image item__image--gems" id="greengems"
                 alt="gems picture">
 
-            <audio id="shimmeraudio">
+            <audio class="sound-area__audio" id="shimmeraudio">
                 <source src="assets/audio/shimmer.mp3"> <!-- ITEM GEMS -->
             </audio>
         </label>

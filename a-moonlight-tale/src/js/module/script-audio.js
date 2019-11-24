@@ -1,48 +1,28 @@
 // JAVASCRIPT AUDIO START
+// How to use:
+// Active area with class "sound-area" and 
+// an attributes data-emouseenter="true" OR data-click="true"
+// inside of them, a child with the class "sound-area__audio"
 
-var audiowater = $("#waveaudio")[0];
-$("#wavesound").mouseenter(function() {
-  audiowater.play();
-});
+(function(){
 
-var audiowatersplash = $("#watersplashaudio")[0];
-$("#watersplash").mouseenter(function() {
-  audiowatersplash.play();
-});
+  // Array creation
+  let areasArray = document.querySelectorAll('.sound-area');
 
-var audiobranches = $("#leavesaudio")[0];
-$("#branchesleaves").mouseenter(function() {
-  audiobranches.play();
-});
+  // Function creation
+  function areaActive(area){
+    function audioPlay() {
+      area.querySelector('.sound-area__audio').play();
+    }
+    area.dataset.emouseenter ? area.addEventListener('mouseenter', audioPlay) : '';
+    area.dataset.eclick ? area.addEventListener('click', audioPlay) : '';
+  }
 
-var hooting = $("#hootingaudio")[0];
-$("#owlhoot").mouseenter(function() {
-  hooting.play();
-});
-
-var audiowaterfall = $("#waterfallaudio")[0];
-$("#waterfall").click(function() {
-  audiowaterfall.play();
-});
-
-var audiofootsteps = $("#footstepsaudio")[0];
-$("#footsteps").mouseenter(function() {
-  audiofootsteps.play();
-});
-
-var shimmering = $("#shimmeraudio")[0];
-$("#mushroomid, #mistletoe, #greengems").mouseenter(function() {
-  shimmering.play();
-});
-
-var openscroll = $("#openscrollaudio")[0];
-$("#openscroll").click(function() {
-  openscroll.play();
-});
-
-var closescroll = $("#closeScrollaudio")[0];
-$("#closescroll").click(function() {
-  closescroll.play();
-});
+  // Function execution for all the elements in the array in loop
+  for (let i=0; i < areasArray.length; i++){
+    areaActive(areasArray[i]);
+  }
+  
+})()
 
 // JAVASCRIPT AUDIO END
