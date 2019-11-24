@@ -1,0 +1,32 @@
+.title {
+	width: 56%;
+	height: 20%;
+	text-shadow: 2px 1px rgba(225, 191, 0, 0.5);
+}
+
+.title__firstline {
+	position: absolute;
+	top: 5rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	animation: floatingfirst 4.1s linear infinite;
+}
+
+.title__secondline {
+	position: absolute;
+	top: 10rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	animation: floatingsecond 4s linear infinite;
+}
+
+.title__thirdline {
+	position: absolute;
+	top: 15rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	animation: floatingthird 4.1s linear infinite;
+}

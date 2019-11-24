@@ -1,0 +1,108 @@
+/*PARALLAX EFFECT CSS START*/
+
+/*PARALLAX HOVER DIVS*/
+
+.hoverdiv {
+	opacity: 0;
+}
+
+.hoverLeft {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+	background-color: green;
+}
+
+.hoverUpLeft {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+	background-color: violet;
+}
+
+.hoverRight {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+	background-color: red;
+}
+
+.hoverUpRight {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+	background-color: orange;
+}
+
+.hoverLeft:hover~.parallax--foreground {
+	transform: translate(-0.7rem);
+}
+
+.hoverLeft:hover~.parallax--background {
+	transform: translate(-0.5rem);
+}
+
+.hoverRight:hover~.parallax--foreground {
+	transform: translate(0.7rem);
+}
+
+.hoverRight:hover~.parallax--background {
+	transform: translate(0.5rem);
+}
+
+.hoverUpRight:hover~.parallax--foreground {
+	transform: translateY(0.7rem);
+}
+
+.hoverUpRight:hover~.parallax--background {
+	transform: translateY(-0.5rem);
+}
+
+.hoverUpLeft:hover~.parallax--foreground {
+	transform: translateY(0.7rem);
+}
+
+.hoverUpLeft:hover~.parallax--background {
+	transform: translateY(-0.5rem);
+}
+
+
+/*PARALLAX EFFECT LAYERS PICTURES*/
+
+.parallax--background {
+	position: absolute;
+	margin: -0.9rem 0 0 -0.9rem;
+	width: calc(100% + 1.8rem);
+	height: calc(100% + 1.8rem);
+	overflow: hidden;
+	z-index: -2;
+	transition: transform 1s linear;
+}
+
+.parallax--middleground {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	transition: transform 1s linear;
+	z-index: -1;
+}
+
+.parallax--foreground {
+	position: absolute;
+	margin-bottom: -0.9rem;
+	margin-left: -0.9rem;
+	width: calc(100% + 1.8rem);
+	bottom: 0;
+	transition: transform 1s linear;
+}
+
+
+/*PARALLAX EFFECT CSS END*/

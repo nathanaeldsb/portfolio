@@ -1,0 +1,351 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>THE TALE OF THE MOONLIGHT WALK</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<main class="moonlight-walk__main">
+
+    <!-- PARALLAX EFFECT HOVER DIVS START -->
+
+    <div class=" hoverdiv hoverLeft"></div>
+    <div class=" hoverdiv hoverUpLeft"></div>
+    <div class=" hoverdiv hoverRight"></div>
+    <div class=" hoverdiv hoverUpRight"></div>
+
+    <!-- PARALLAX EFFECT HOVER DIVS END -->
+
+    <!-- PARALLAX EFFECT IMAGES START -->
+
+    <img class="parallax parallax--background" src="../assets/img/background.png" alt="Enchanted Forest picture">
+    <img class="parallax parallax--middleground" src="../assets/img/middleground.png"
+        alt="Character parallax effect picture">
+    <img class="parallax parallax--foreground" src="../assets/img/foreground.png"
+        alt="Branches parallax effect picture">
+
+    <!-- PARALLAX EFFECT IMAGES END -->
+
+
+    <!-- GLOWING SPHERES START -->
+
+    <img class="glowing-sphere__main" src="../assets/img/glowing-sphere-main-wobranches5.png"
+        alt="Glowing Sphere">
+
+    <!-- GLOWING SPHERES END -->
+
+
+    <!-- FIREFLIES CANVAS -->
+
+    <canvas id="canvas__fireflies"></canvas>
+
+    <!-- TITLE START-->
+
+    <h1 class="title">
+        <span class="title__firstline">The Tale</span>
+        <span class="title__secondline">of the</span>
+        <span class="title__thirdline">Moonlight Walk</span>
+    </h1>
+
+    <!-- TITLE END -->
+
+    <!-- DESCRIPTION PARCHMENT START-->
+
+    <div class="container" id="container">
+        <span class="container__open" id="openscroll">&#9013;
+            <audio id="openscrollaudio">
+                <source src="../assets/audio/openscroll.mp3">
+            </audio>
+        </span>
+        <span class="container__close" id="closescroll">&#9932;
+            <audio id="closeScrollaudio">
+                <source src="../assets/audio/closescroll.mp3">
+            </audio>
+        </span>
+    </div>
+
+    <div class="description" id="description">
+
+        <h2 class="description__title">The Tale of the Moonlight Walk Landing Page</h2>
+        <p class="description__p"> <i>Jack looked at the window; all the stars were now alive and the moon was
+                painting everything she could reach. He took his knapsack, his lantern and soon the door of his
+                house was locked; all the light asleep. His cat saw him heading to the forest: "It is a perfect
+                night for a tale!", he thought.</i></p>
+        <p class="description__p"> Welcome to the Tale of Moonlight Walk Landing page! Soon, you will be able to
+            enjoy this interactive Book of Wonders!</p>
+        <p class="description__p"> Create your account, collect items, turn on the full screen mode (f11) and
+            prepare to venture into the woods...</p>
+        <p class="description__signature">Yours Faithfully,</p>
+        <br>
+        <p class="description__signature">a Walker in the Forest...</p>
+    </div>
+
+    <!-- DESCRIPTION PARCHMENT END -->
+
+
+    <!-- SOUND EFFECTS -->
+
+    <div class="wavesound" id="wavesound">
+        <audio id="waveaudio">
+            <source src="../assets/audio/wavesound.mp3"> <!-- Water Waving effect -->
+        </audio>
+    </div>
+
+    <div class="watersplash" id="watersplash">
+        <audio id="watersplashaudio">
+            <source src="../assets/audio/watersplash.mp3"> <!-- Watefall effect -->
+        </audio>
+    </div>
+
+    <div class="branchesleaves" id="branchesleaves">
+        <audio id="leavesaudio">
+            <source src="../assets/audio/branchesLeaves.mp3"> <!-- Branches Leaves effect -->
+        </audio>
+    </div>
+
+    <div class="owlhoot" id="owlhoot">
+        <audio id="hootingaudio">
+            <source src="../assets/audio/owlhoot.mp3"> <!-- OWL Hooting effect -->
+        </audio>
+    </div>
+
+    <div class="waterfall" id="waterfall">
+        <audio id="waterfallaudio">
+            <source src="../assets/audio/waterfallsound.mp3" /> <!-- Watefall effect -->
+        </audio>
+    </div>
+
+    <div class="footsteps" id="footsteps">
+        <audio id="footstepsaudio">
+            <source src="../assets/audio/footstepsound.mp3" /> <!-- Footsteps effect -->
+        </audio>
+    </div>
+
+    <!-- ITEMS TO FIND START-->
+
+    <!-- MUSHROOMS -->
+
+    <form>
+        <label for="option1" class="item item--mushrooms">
+            <input id="option1" class="item__radio item__radio--mushrooms" type="radio" name="itemCollection"
+                value="mushrooms">
+
+            <img src="../assets/img/fungis.png" class="item__image item__image--mushrooms" id="mushroomid"
+                alt="mushrooms picture">
+
+            <audio id="shimmeraudio">
+                <source src="assets/audio/shimmer.mp3"> <!-- ITEM MUSHROOMS -->
+            </audio>
+        </label>
+
+        <label for="option2" class="item item--mistletoe">
+            <input id="option2" class="item__radio item__radio--mistletoe" type="radio" name="itemCollection"
+                value="mistletoe">
+
+            <img src="../assets/img/mistletoeright.png" class="item__image item__image--mistletoe" id="mistletoe"
+                alt="mistletoe picture">
+
+            <audio id="shimmeraudio">
+                <source src="assets/audio/shimmer.mp3"> <!-- ITEM MISTLETOE -->
+            </audio>
+        </label>
+
+        <label for="option3" class="item item--gems">
+            <input id="option3" class="item__radio item__radio--gems" type="radio" name="itemCollection"
+                value="gems">
+
+            <img src="../assets/img/greengems.png" class="item__image item__image--gems" id="greengems"
+                alt="gems picture">
+
+            <audio id="shimmeraudio">
+                <source src="assets/audio/shimmer.mp3"> <!-- ITEM GEMS -->
+            </audio>
+        </label>
+    </form>
+
+
+    <div class="modals"></div>
+
+    <!-- ITEMS TO FIND END -->
+
+    <include>_header.html</include>
+    
+    <!-- SIGN UP MODAL START -->
+
+    <div class="modal__wrapper menu-modal">
+        <div class="modal__content">
+            <article class="modal__content--loginemail">
+                <section class="modal__content--signform">
+                    <div class="descriptionsignup">
+                        <h2 class="description--title">Become a Tale Wanderer</h2>
+                        <p class="description--paragraphe">Explore the story, collect items, unlock extra-content
+                            and share with your Fellow Wanderers.</p>
+                        <p class="description--warning">You will soon be able to create your account!</p>
+                    </div>
+
+                    <form class="form" action="" method="post">
+                        <div class="form--field">
+                            <!-- <label for="username">Username:</label> -->
+                            <input id="username" type="text" placeholder="Username" autocomplete="off" required
+                                disabled>
+                        </div>
+
+                        <div class="form--field">
+                            <!-- <label for="email">Your Email:</label> -->
+                            <input id="email" type="email" placeholder="E-mail address" autocomplete="off" required
+                                disabled>
+
+                        </div>
+
+                        <div class="form--field">
+                            <!-- <label for="password">Password: </label>-->
+                            <input id="password" type="password" name="password" placeholder="Password"
+                                autocomplete="off" required pattern=".{6,}"
+                                title="Must be at least 6 characters long" disabled>
+
+                        </div>
+
+                        <input type="button" class="btn" id="formclassid" value="EXPLORE">
+                    </form>
+                </section>
+            </article>
+
+            <article class="modal__content--loginsocial">
+                <div class="orstatement">
+                    <p>OR LOG IN WITH</p>
+                </div>
+                <div class="fbbutton" title="facebook"><img class="fbbutton--img"
+                        src="../assets/img/fbcircleicon.png" alt="facebook logo"></div>
+                <div class="gmailbutton" title="gmail"><img class="gmailbutton--img"
+                        src="../assets/img/gmailicon.png" alt="gmail logo"></div>
+            </article>
+        </div>
+        <span class="modal__close">&#9932;</span>
+    </div>
+
+    <!-- SIGN UP MODAL END -->
+
+    <!-- ABOUT MODAL START -->
+
+    <div class="aboutcontainer menu-modal">
+        <span class="aboutcontainer__close">&#9932;</span>
+        <div class="card__container">
+            <div class="card">
+                <figure class="cardfigure cardfigure__front front">
+                    <figcaption>
+                        <h3>ABOUT THE <i>WALKER IN THE FOREST</i></h3>
+                    </figcaption>
+                    <img src="../assets/img/walkerimg2.png" class="cardfigure__front--img" alt="forest image">
+                </figure>
+                <figure class="cardfigure back">
+                    <b>
+                        <p>My name is Nathaniel; I have been into Programming (Front-End) for quite some time now.
+                            I'm currently exploring this field both on a personal and professional level. I love
+                            working on interactions and animations and aim to design complete digital experiences in
+                            which artistic and intellectual sensibilities are combined.</p>
+                        <p>Writing is for me a very powerful way of expressing my thoughts, concerns and artistic
+                            <i>unrest</i>. Creating tales may be the thing I enjoy the most. I strive to make
+                            meaningful and inspiring stories come to life; walking on uncovered grounds.</p>
+                        <p>Then I let my code do the Magic!</p>
+                    </b>
+                </figure>
+            </div>
+        </div>
+
+        <div class="talecard__container">
+            <div class="talecard">
+                <figure class="talecard__figure talecard__figure--front">
+                    <figcaption>
+                        <h3>ABOUT THE <i>TALE OF THE MOONLIGHT WALK</i></h3>
+                    </figcaption>
+                    <img src="../assets/img/taleimg.png" class="talecard__front--img"
+                        alt="man walking in the forest">
+                </figure>
+                <figure class="talecard__figure talecard__figure--back">
+                    <b>
+                        <p>Fascinated by Storytelling, Illustration and the new possibilities offered by Programming
+                            I decided to create a beautiful place where all these crafts would gather together.
+                            Henceforth, I started this project I hope will inspire the <i>Tales'Wanderers</i> and
+                            give birth to fulfilling experiences.</p>
+
+                        <p>Page after page, the <i>Wanderers</i> will interact with spectacular pieces of artwork
+                            designed to give life to the story-telling. Thus, they will be able to collect items and
+                            key artefacts of the story they are diving in, unlock extra-content that will give them
+                            more details about places, characters, objects they encounter and events they face with
+                            the heroes.</p>
+                    </b>
+                </figure>
+            </div>
+        </div>
+
+        <div class="bookcard__container">
+            <div class="bookcard">
+                <figure class="bookcard__figure bookcard__figure--front">
+                    <figcaption>
+                        <h3>ABOUT THE <i>BOOK OF WONDERS</i></h3>
+                    </figcaption>
+                    <img src="../assets/img/bookimg2.png" class="cardfigure__front--img bookcard--img"
+                        alt="character reading">
+                </figure>
+                <figure class="bookcard__figure bookcard__figure--back">
+                    <b>
+                        <p>The idea of the <i>Book of Wonders</i> is an enhancement of the first experience
+                            described earlier. Not only will the <i>Wanderers</i> be able to explore one tale but an
+                            entire set of interactive stories, giving them the opportunity to live original
+                            adventures, each one of them created by different artists in their own distinctive and
+                            thrilling style.</p>
+                    </b>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT MODAL END -->
+
+    <!-- CONTACT MODAL START -->
+
+    <div class="contactmodal__wrapper menu-modal">
+        <span class="contactmodal__close">&#9932;</span>
+        <div class="contactmodal__container">
+            <div class="contactmodal__container__img">
+                <img class="container--img" src="../assets/img/contactmodalimg.png"
+                    alt="House in the wood image"></img>
+            </div>
+            <p class="contactmodal__container--paragraphe">If you have any question, suggestion or collaboration
+                proposal, the Walker in the Forest will listen to you:</p>
+            <p class="contactmodal__container--paragraphe">walker@amoonlightwalk.com</p>
+        </div>
+    </div>
+
+    <!-- CONTACT MODAL END -->
+
+    <!-- PRELOADER START -->
+
+    <!-- <div class="loader">
+        <div class="loader__text loader__text--first">
+            <p class="loader__paragraphe">For a Better Experience, Go Full Screen (press F11)</p>
+        </div>
+
+        <div class="loader__text loader__text--middle">
+            <p class="loader__paragraphe">You Will Soon Enter <i>The Tale of the Moonlight Walk</i> Landing Page</p>
+        </div>
+
+        <div class="loader__text loader__text--last">
+            <p class="loader__paragraphe">Look for Items to Collect, Extra-content to Discover and Learn more about the Project</p>
+        </div>
+
+        <div class="loader__gif">
+            <div class="loader__gif__deer"></div>
+            <div class="loader__gif__text"><i>You are arriving into the Forest...</i></div>
+        </div>
+    </div> -->
+
+	<!-- PRELOADER END -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</main>
+<include>_footer.html</include>
+</body>
+</html>

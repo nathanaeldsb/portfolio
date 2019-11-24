@@ -1,0 +1,179 @@
+@keyframes advice {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes loadinganim {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes glowing {
+	0% {
+		opacity: 0.89;
+	}
+	25% {
+		opacity: 0.55;
+	}
+	50% {
+		opacity: 0.89;
+	}
+	75% {
+		opacity: 0.55;
+	}
+	100% {
+		opacity: 0.89;
+	}
+}
+
+@keyframes floatingfirst {
+	0% {
+		top: 5rem;
+	}
+	25% {
+		top: 5.2rem;
+	}
+	50% {
+		top: 5rem;
+	}
+	75% {
+		top: 5.4rem;
+	}
+	100% {
+		top: 5rem;
+	}
+}
+
+@keyframes floatingsecond {
+	0% {
+		top: 10rem;
+	}
+	25% {
+		top: 10.2rem;
+	}
+	50% {
+		top: 10rem;
+	}
+	75% {
+		top: 10.4rem;
+	}
+	100% {
+		top: 10rem;
+	}
+}
+
+@keyframes floatingthird {
+	0% {
+		top: 15rem;
+	}
+	25% {
+		top: 15.2rem;
+	}
+	50% {
+		top: 15rem;
+	}
+	75% {
+		top: 15.4rem;
+	}
+	100% {
+		top: 15rem;
+	}
+}
+
+@keyframes aboutfloating {
+	0% {
+		top: 20rem;
+	}
+	25% {
+		top: 20.2rem;
+	}
+	50% {
+		top: 20rem;
+	}
+	75% {
+		top: 20.4rem;
+	}
+	100% {
+		top: 20rem;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.03);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	75% {
+		transform: scale(1.03);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes floatfb {
+	0% {
+		top: 10rem;
+	}
+	25% {
+		top: 10.2rem;
+	}
+	50% {
+		top: 10rem;
+	}
+	75% {
+		top: 10.4rem;
+	}
+	100% {
+		top: 10rem;
+	}
+}
+
+@keyframes floatgmail {
+	0% {
+		top: 20rem;
+	}
+	25% {
+		top: 20.2rem;
+	}
+	50% {
+		top: 20rem;
+	}
+	75% {
+		top: 20.4rem;
+	}
+	100% {
+		top: 20rem;
+	}
+}

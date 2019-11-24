@@ -1,0 +1,57 @@
+/*SOUND EFFECTS*/
+
+.wavesound {
+	position: absolute;
+	width: 40rem;
+	height: 4rem;
+	bottom: 1rem;
+	right: 10rem;
+}
+
+.watersplash {
+	position: absolute;
+	width: 6rem;
+	height: 4rem;
+	bottom: 1rem;
+	right: 52rem;
+}
+
+.branchesleaves {
+	position: absolute;
+	width: 24rem;
+	height: 12rem;
+	bottom: 33rem;
+	left: 7rem;
+}
+
+.owlhoot {
+	position: absolute;
+	width: 6rem;
+	height: 8rem;
+	top: 5rem;
+	left: 34rem;
+}
+
+.waterfall {
+	position: absolute;
+	width: 7rem;
+	height: 7rem;
+	bottom: 10rem;
+	left: 48rem;
+	border-radius: 50%;
+}
+
+.waterfall:hover {
+	border: 3px solid white;
+	box-shadow: 3px 3px white;
+	filter: blur(1px);
+	animation: rotate 2s linear infinite;
+}
+
+.footsteps {
+	position: absolute;
+	width: 7rem;
+	height: 7rem;
+	bottom: 2rem;
+	left: 36rem;
+}

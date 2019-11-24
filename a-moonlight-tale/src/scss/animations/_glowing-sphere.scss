@@ -1,0 +1,20 @@
+.glowing-sphere__img {
+  position: absolute;
+  bottom: 15rem;
+  right: 16rem;
+  width: 12.1rem;
+  height: 12.1rem;
+  opacity: 0.85;
+  animation: glowing 5s linear infinite;
+  z-index: -1;
+}
+
+.glowing-sphere__main {
+  position: absolute;
+  bottom: 1rem;
+  left: 7rem;
+  width: 23.1rem;
+  opacity: 0.89;
+  animation: glowing 4.5s linear infinite;
+  z-index: -2;
+}

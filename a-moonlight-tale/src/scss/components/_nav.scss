@@ -1,0 +1,113 @@
+/*NAVBAR NAVBAR CSS*/
+
+.nav__btn {
+	position: absolute;
+	top: 0.5%;
+	left: -0.5%;
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	vertical-align: middle;
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.nav:hover .nav__bg {
+	background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 9px 50px 5px white;
+}
+
+.nav__close {
+	display: none;
+}
+
+.nav__open {
+	display: inline;
+}
+
+.nav__bg {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 1rem;
+	left: 0.5rem;
+	height: 10rem;
+	width: 10rem;
+	font-size: 4rem;
+	cursor: pointer;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	transition: all 1s;
+}
+
+.nav.is-active .nav__bg {
+	height: 60rem;
+	width: 60rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 9px 50px 5px white;
+}
+
+.nav.is-active .nav__menu {
+	opacity: 1;
+	z-index: 99;
+}
+
+.nav.is-active .nav__item {
+	cursor: pointer;
+	pointer-events: initial;
+}
+
+.nav.is-active .nav__open {
+	display: none;
+}
+
+.nav.is-active .nav__close {
+	display: inline;
+}
+
+.nav__menu {
+	position: absolute;
+	top: 6.9rem;
+	left: 5.7rem;
+	height: 15rem;
+	width: 17rem;
+	list-style: none;
+	text-align: left;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 0.1s linear 0.2s;
+}
+
+.nav__item {
+	background-color: transparent;
+	height: 2rem;
+	margin-bottom: 2.8rem;
+	vertical-align: middle;
+	line-height: 2rem;
+	text-align: left;
+	pointer-events: none;
+	text-decoration: none;
+	color: white;
+	border-radius: 1rem;
+}
+
+.nav__item:hover {
+	text-decoration: underline;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: white;
+}
+
+.nav__item--contact {
+	cursor: pointer;
+}
