@@ -14,11 +14,10 @@
     function audioPlay() {
       area.querySelector('.sound-area__audio').play();
     }
-    area.dataset.emouseenter ? area.addEventListener('mouseenter', audioPlay) : '';
-    area.dataset.eclick ? area.addEventListener('click', audioPlay) : '';
+    area.dataset.trigger ? area.addEventListener(area.dataset.trigger, audioPlay) : '';
   }
 
-  // Function execution for all the elements in the array in loop
+  // Loop of function execution for all the elements in the array
   for (let i=0; i < areasArray.length; i++){
     areaActive(areasArray[i]);
   }

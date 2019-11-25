@@ -1,11 +1,12 @@
 // DYNAMIC MODAL START
+(function(){
 
-var mainContainer = document.querySelector(".modals");
+	let mainContainer = document.querySelector(".modals");
 
-		var radioList = document.querySelectorAll(".item__radio");
+		let radioList = document.querySelectorAll(".item__radio");
 
 		// ITEMS MODALS
-		var items = {
+		let items = {
 
 			mushrooms : { 
 				name: "Mushrooms",
@@ -33,7 +34,9 @@ var mainContainer = document.querySelector(".modals");
 
 		function itemCollect(){
 
-			var myValue = this.value;
+			let myValue = this.value;
+
+			let allOpenArray = document.querySelectorAll('.is-active:not(#itemPopup)');
 
 			mainContainer.innerHTML = `<div class="itemModal is-active" id="itemPopup">
 											<div class="itemModal__content">
@@ -56,14 +59,17 @@ var mainContainer = document.querySelector(".modals");
 									</div>`;
 
 			document.querySelector(".itemModal__close").addEventListener("click", function(){
-				document.querySelector(".itemModal").classList.remove("is-active");
+				document.querySelector(".is-active").classList.remove("is-active");
 			});
 			
-			closeNav();
+			for (let openItem of allOpenArray) {
+				openItem.classList.remove('is-active');
+			}
 		};
 
-		for (var radio of radioList) {
+		for (let radio of radioList) {
 			radio.addEventListener("click", itemCollect);
 		}
+})()
 
 // DYNAMIC MODAL END

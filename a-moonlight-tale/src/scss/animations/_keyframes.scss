@@ -54,55 +54,55 @@
 
 @keyframes floatingfirst {
 	0% {
-		top: 5rem;
+		transform: translate(-50%, 1%);
 	}
 	25% {
-		top: 5.2rem;
+		transform: translate(-50%, 8%);
 	}
 	50% {
-		top: 5rem;
+		transform: translate(-50%, 1%);
 	}
 	75% {
-		top: 5.4rem;
+		transform: translate(-50%, 9%);
 	}
 	100% {
-		top: 5rem;
+		transform: translate(-50%, 1%);
 	}
 }
 
 @keyframes floatingsecond {
 	0% {
-		top: 10rem;
+		transform: translate(-50%, 1%);
 	}
 	25% {
-		top: 10.2rem;
+		transform: translate(-50%, 8%);
 	}
 	50% {
-		top: 10rem;
+		transform: translate(-50%, 1%);
 	}
 	75% {
-		top: 10.4rem;
+		transform: translate(-50%, 9%);
 	}
 	100% {
-		top: 10rem;
+		transform: translate(-50%, 1%);
 	}
 }
 
 @keyframes floatingthird {
 	0% {
-		top: 15rem;
+		transform: translate(-50%, 1%);
 	}
 	25% {
-		top: 15.2rem;
+		transform: translate(-50%, 8%);
 	}
 	50% {
-		top: 15rem;
+		transform: translate(-50%, 1%);
 	}
 	75% {
-		top: 15.4rem;
+		transform: translate(-50%, 9%);
 	}
 	100% {
-		top: 15rem;
+		transform: translate(-50%, 1%);
 	}
 }
 

@@ -51,72 +51,72 @@
     <!-- TITLE END -->
 
     <!-- DESCRIPTION PARCHMENT START-->
-
-    <div class="container" id="container">
-        <span class="sound-area container__open" id="openscroll" data-eclick="true">&#9013;
-            <audio class="sound-area__audio" id="openscrollaudio">
-                <source src="../assets/audio/openscroll.mp3">
-            </audio>
-        </span>
-        <span class="sound-area container__close" id="closescroll" data-eclick="true">&#9932;
-            <audio class="sound-area__audio" id="closeScrollaudio">
-                <source src="../assets/audio/closescroll.mp3">
-            </audio>
-        </span>
+    <div id="parchment" class="parchment">
+        <div class="parchment__btn container" id="container" data-toggle="#parchment">
+            <span class="sound-area container__open" id="openscroll" data-trigger="click">&#9013;
+                <audio class="sound-area__audio" id="openscrollaudio">
+                    <source src="../assets/audio/openscroll.mp3">
+                </audio>
+            </span>
+            <span class="sound-area container__close" id="closescroll" data-trigger="click">&#9932;
+                <audio class="sound-area__audio" id="closeScrollaudio">
+                    <source src="../assets/audio/closescroll.mp3">
+                </audio>
+            </span>
+        </div>
+    
+        <div class="parchment__content description" id="description">
+            <h2 class="description__title">The Tale of the Moonlight Walk Landing Page</h2>
+            <p class="description__p"> <i>Jack looked at the window; all the stars were now alive and the moon was
+                    painting everything she could reach. He took his knapsack, his lantern and soon the door of his
+                    house was locked; all the light asleep. His cat saw him heading to the forest: "It is a perfect
+                    night for a tale!", he thought.</i></p>
+            <p class="description__p"> Welcome to the Tale of Moonlight Walk Landing page! Soon, you will be able to
+                enjoy this interactive Book of Wonders!</p>
+            <p class="description__p"> Create your account, collect items, turn on the full screen mode (f11) and
+                prepare to venture into the woods...</p>
+            <p class="description__signature">Yours Faithfully,</p>
+            <br>
+            <p class="description__signature">a Walker in the Forest...</p>
+        </div>
     </div>
-
-    <div class="description" id="description">
-
-        <h2 class="description__title">The Tale of the Moonlight Walk Landing Page</h2>
-        <p class="description__p"> <i>Jack looked at the window; all the stars were now alive and the moon was
-                painting everything she could reach. He took his knapsack, his lantern and soon the door of his
-                house was locked; all the light asleep. His cat saw him heading to the forest: "It is a perfect
-                night for a tale!", he thought.</i></p>
-        <p class="description__p"> Welcome to the Tale of Moonlight Walk Landing page! Soon, you will be able to
-            enjoy this interactive Book of Wonders!</p>
-        <p class="description__p"> Create your account, collect items, turn on the full screen mode (f11) and
-            prepare to venture into the woods...</p>
-        <p class="description__signature">Yours Faithfully,</p>
-        <br>
-        <p class="description__signature">a Walker in the Forest...</p>
-    </div>
-
+    
     <!-- DESCRIPTION PARCHMENT END -->
 
 
     <!-- SOUND EFFECTS -->
 
-    <div class="sound-area wavesound" id="wavesound" data-emouseenter="true">
+    <div class="sound-area wavesound" id="wavesound" data-trigger="mouseenter">
         <audio class="sound-area__audio" id="waveaudio">
             <source src="../assets/audio/wavesound.mp3"> <!-- Water Waving effect -->
         </audio>
     </div>
 
-    <div class="sound-area watersplash" id="watersplash" data-emouseenter="true">
+    <div class="sound-area watersplash" id="watersplash" data-trigger="mouseenter">
         <audio class="sound-area__audio" id="watersplashaudio">
             <source src="../assets/audio/watersplash.mp3"> <!-- Watefall effect -->
         </audio>
     </div>
 
-    <div class="sound-area branchesleaves" id="branchesleaves" data-emouseenter="true">
+    <div class="sound-area branchesleaves" id="branchesleaves" data-trigger="mouseenter">
         <audio class="sound-area__audio" id="leavesaudio">
             <source src="../assets/audio/branchesLeaves.mp3"> <!-- Branches Leaves effect -->
         </audio>
     </div>
 
-    <div class="sound-area owlhoot" id="owlhoot" data-emouseenter="true">
+    <div class="sound-area owlhoot" id="owlhoot" data-trigger="mouseenter">
         <audio class="sound-area__audio" id="hootingaudio">
             <source src="../assets/audio/owlhoot.mp3"> <!-- OWL Hooting effect -->
         </audio>
     </div>
 
-    <div class="sound-area waterfall" id="waterfall" data-emouseenter="true">
+    <div class="sound-area waterfall" id="waterfall" data-trigger="click">
         <audio class="sound-area__audio" id="waterfallaudio">
             <source src="../assets/audio/waterfallsound.mp3" /> <!-- Watefall effect -->
         </audio>
     </div>
 
-    <div class="sound-area footsteps" id="footsteps" data-emouseenter="true">
+    <div class="sound-area footsteps" id="footsteps" data-trigger="mouseenter">
         <audio class="sound-area__audio" id="footstepsaudio">
             <source src="../assets/audio/footstepsound.mp3" /> <!-- Footsteps effect -->
         </audio>
@@ -127,7 +127,7 @@
     <!-- MUSHROOMS -->
 
     <form>
-        <label for="option1" class="sound-area item item--mushrooms" data-emouseenter="true">
+        <label for="option1" class="sound-area item item--mushrooms" data-trigger="mouseenter">
             <input id="option1" class="item__radio item__radio--mushrooms" type="radio" name="itemCollection"
                 value="mushrooms">
 
@@ -139,7 +139,7 @@
             </audio>
         </label>
 
-        <label for="option2" class="sound-area item item--mistletoe" data-emouseenter="true">
+        <label for="option2" class="sound-area item item--mistletoe" data-trigger="mouseenter">
             <input id="option2" class="item__radio item__radio--mistletoe" type="radio" name="itemCollection"
                 value="mistletoe">
 
@@ -151,7 +151,7 @@
             </audio>
         </label>
 
-        <label for="option3" class="sound-area item item--gems" data-emouseenter="true">
+        <label for="option3" class="sound-area item item--gems" data-trigger="mouseenter">
             <input id="option3" class="item__radio item__radio--gems" type="radio" name="itemCollection"
                 value="gems">
 
@@ -173,7 +173,7 @@
     
     <!-- SIGN UP MODAL START -->
 
-    <div class="modal__wrapper menu-modal">
+    <div id="login" class="modal__wrapper menu-modal">
         <div class="modal__content">
             <article class="modal__content--loginemail">
                 <section class="modal__content--signform">
@@ -221,15 +221,15 @@
                         src="../assets/img/gmailicon.png" alt="gmail logo"></div>
             </article>
         </div>
-        <span class="modal__close">&#9932;</span>
+        <span class="modal__close" data-toggle="#login">&#9932;</span>
     </div>
 
     <!-- SIGN UP MODAL END -->
 
     <!-- ABOUT MODAL START -->
 
-    <div class="aboutcontainer menu-modal">
-        <span class="aboutcontainer__close">&#9932;</span>
+    <div id="about" class="aboutcontainer menu-modal">
+        <span class="aboutcontainer__close" data-toggle="#about">&#9932;</span>
         <div class="card__container">
             <div class="card">
                 <figure class="cardfigure cardfigure__front front">
@@ -305,8 +305,8 @@
 
     <!-- CONTACT MODAL START -->
 
-    <div class="contactmodal__wrapper menu-modal">
-        <span class="contactmodal__close">&#9932;</span>
+    <div id="contact" class="contactmodal__wrapper menu-modal">
+        <span class="contactmodal__close" data-toggle="#contact">&#9932;</span>
         <div class="contactmodal__container">
             <div class="contactmodal__container__img">
                 <img class="container--img" src="../assets/img/contactmodalimg.png"
