@@ -18,7 +18,7 @@ const getPlugins = () => {
             }
         ]),
         new ExtractTextPlugin({
-            filename: './assets/css/styles.css',
+            filename: './assets/css/styles.min.css',
             allChunks: true
         })
     ];
@@ -45,7 +45,7 @@ module.exports = {
         './src/scss/app.scss'
     ],
     output: {
-        filename: './assets/js/bundle.js',
+        filename: './assets/js/scripts.min.js',
     },
     plugins: getPlugins(),
     module: {

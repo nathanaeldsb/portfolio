@@ -32,7 +32,7 @@ const getPlugins = () => {
             }
         ]),
         new ExtractTextPlugin({
-            filename: './assets/css/styles.css',
+            filename: './assets/css/styles.min.css',
             allChunks: true
         })
     ];
@@ -56,7 +56,7 @@ const getPlugins = () => {
 module.exports = {
     entry: getEntries(),
     output: {
-        filename: './assets/js/bundle.js',
+        filename: './assets/js/scrips.min.js',
     },
     plugins: getPlugins(),
     module: {
