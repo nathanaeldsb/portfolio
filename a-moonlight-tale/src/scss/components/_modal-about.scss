@@ -43,6 +43,22 @@
     }
   }
 
+  &:nth-child(2) {
+    position: absolute;
+    top: 2rem;
+    left: 31rem;
+    width: 24rem;
+    height: 31rem;
+  }
+
+  &:nth-child(3) {
+    position: absolute;
+    top: 2rem;
+    left: 58rem;
+    width: 24rem;
+    height: 31rem;
+  }
+
   &__content {
     width: 100%;
     height: 100%;
@@ -82,106 +98,4 @@
     }
   }
 }
-
-/*TALE CARD*/
-
-.card:nth-child(2) {
-  position: absolute;
-  top: 2rem;
-  left: 31rem;
-  width: 24rem;
-  height: 31rem;
-}
-
-.talecard__container:hover .card__content {
-  transform: rotateY(180deg) perspective(2000px);
-}
-
-
-
-.talecard__figure {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin-top: 5rem;
-  text-align: center;
-  border-radius: 1rem;
-}
-
-.talecard__figure--front {
-  padding: 4rem;
-  font-size: 1.5rem;
-  background-color: black;
-  color: white;
-}
-
-.talecard__front--img {
-  height: 12rem;
-  width: 12rem;
-  margin-top: 2rem;
-}
-
-.talecard__figure--back {
-  background-color: white;
-  color: black;
-  padding: 2rem;
-  font-size: 1.2rem;
-  background-color: rgb(224, 224, 224);
-  transform: rotateY(180deg) translateZ(0) perspective(2000px);
-  backface-visibility: hidden;
-}
-
-/*BOOKCARD*/
-
-.bookcard__container {
-  position: absolute;
-  top: 2rem;
-  left: 58rem;
-  width: 24rem;
-  height: 31rem;
-}
-
-.bookcard__container:hover .bookcard {
-  transform: rotateY(180deg) perspective(2000px);
-}
-
-.bookcard {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 2s ease-in-out;
-}
-
-.bookcard__figure {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin-top: 5rem;
-  text-align: center;
-  border-radius: 1rem;
-}
-
-.bookcard__figure--front {
-  padding: 4rem;
-  font-size: 1.5rem;
-  background-color: black;
-  color: white;
-}
-
-.bookcard__figure--back {
-  background-color: white;
-  color: black;
-  padding: 2rem;
-  font-size: 1.2rem;
-  background-color: rgb(224, 224, 224);
-  transform: rotateY(180deg) translateZ(0) perspective(2000px);
-  backface-visibility: hidden;
-}
-
-.bookcard--img {
-  height: 12rem;
-  width: 12rem;
-  margin-top: 5.5rem;
-}
-
 /*ABOUT THE PROJECT MODAL CSS END*/
