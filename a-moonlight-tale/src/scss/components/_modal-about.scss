@@ -1,4 +1,4 @@
-/*ABOUT THE PROJECT MODAL CSS START*/
+/*ABOUT THE PROJECT MODALS CSS START*/
 
 .about {
   position: absolute;
@@ -44,19 +44,11 @@
   }
 
   &:nth-child(2) {
-    position: absolute;
-    top: 2rem;
     left: 31rem;
-    width: 24rem;
-    height: 31rem;
   }
 
   &:nth-child(3) {
-    position: absolute;
-    top: 2rem;
     left: 58rem;
-    width: 24rem;
-    height: 31rem;
   }
 
   &__content {
@@ -98,4 +90,4 @@
     }
   }
 }
-/*ABOUT THE PROJECT MODAL CSS END*/
+/*ABOUT THE PROJECT MODALS CSS END*/
