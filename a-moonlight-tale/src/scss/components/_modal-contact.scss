@@ -1,68 +1,67 @@
 /*CONTACT MODAL CSS START*/
-.contactmodal__wrapper {
-	position: absolute;
-	display: none;
-	height: 21rem;
-	width: 60rem;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 2rem;
-	background-color: rgba(0, 0, 0, 0.2);
-}
+.contact {
+  position: absolute;
+  display: none;
+  height: 21rem;
+  width: 60rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
 
-.contactmodal__wrapper.is-active {
-	display: block;
-	z-index: 99;
-}
+  &.is-active {
+    display: block;
+    z-index: 99;
+  }
 
-.contactmodal__close {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	color: white;
-	font-size: 2rem;
-	outline: none;
-	text-decoration: none;
-	cursor: pointer;
-}
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.contactmodal__container {
-	position: absolute;
-	display: table;
-	table-layout: fixed;
-	height: 15rem;
-	width: 48rem;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 2rem;
-	color: white;
-	align-items: center;
-	border-radius: 2rem;
-	background-color: rgba(0, 0, 0, 0.9);
-}
+  &__container {
+    position: absolute;
+    display: table;
+    table-layout: fixed;
+    height: 15rem;
+    width: 48rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    color: white;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 
-.contactmodal__container__img {
-	display: table-cell;
-	width: 30%;
-	height: 11rem;
-	vertical-align: middle;
-	float: right;
-	overflow: hidden;
-	border-radius: 2rem;
-}
+  &__figure {
+    display: table-cell;
+    width: 30%;
+    height: 11rem;
+    vertical-align: middle;
+    float: right;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
 
-.container--img {
-	object-fit: contain;
-	width: 100%;
-	height: 100%;
-	border-radius: 2rem;
-}
+  &__img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+  }
 
-.contactmodal__container--paragraphe {
-	margin-bottom: 2rem;
-	font-size: 1.5rem;
+  &__paragraphe {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
 }
-
 /*CONTACT MODAL CSS END*/

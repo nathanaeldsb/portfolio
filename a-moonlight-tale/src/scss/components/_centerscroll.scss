@@ -1,78 +1,76 @@
 /*CENTER SCROLL STORY*/
 
 .container {
-	position: absolute;
-	left: 50%;
-	top: 40%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
-	color: white;
-	line-height: 4rem;
-	vertical-align: middle;
-	font-size: 2rem;
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.2);
-	animation: aboutfloating 4.1s forwards infinite;
-	transition: all 1.5s;
-	z-index: 3;
-}
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: white;
+  line-height: 4rem;
+  vertical-align: middle;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: aboutfloating 4.1s forwards infinite;
+  transition: all 1.5s;
+  z-index: 3;
 
-.container:hover {
-	background-color: rgba(0, 0, 0, 0.3);
-	box-shadow: 5px 9px 50px 5px white;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 9px 50px 5px white;
+  }
+  &__close {
+    display: none;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
 }
-
-.container__close {
-	display: none;
-	font-size: 1rem;
-	vertical-align: middle;
-}
-
 .description {
-	position: absolute;
-	display: none;
-	padding: 2.8rem;
-	left: 50%;
-	top: 62%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 25rem;
-	height: 32rem;
-	color: black;
-	background-image: url(../img/scroll.png);
-	background-size: auto 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	transition: all 1s ease;
-	z-index: 2;
-}
+  position: absolute;
+  display: none;
+  padding: 2.8rem;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 25rem;
+  height: 32rem;
+  color: black;
+  background-image: url(../img/scroll.png);
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: all 1s ease;
+  z-index: 2;
 
-.description__title {
-	margin-bottom: 0.8rem;
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+  &__p {
+    margin-bottom: 0.5rem;
+  }
+  &__signature {
+    margin-top: 2rem;
+    position: absolute;
+    right: 14%;
+  }
 }
-
-.description__p {
-	margin-bottom: 0.5rem;
-}
-
-.description__signature {
-	margin-top: 2rem;
-	position: absolute;
-	right: 14%;
-}
-
 
 /* States */
-
-.parchment.is-active .parchment__content,
-.parchment.is-active .container__close{
-	display: block;
+.is-active {
+  &.parchment{
+    .parchment__content,
+    .container__close {
+      display: block;
+    }
+    .container__open {
+      display: none;
+    }
+  } 
 }
 
-.parchment.is-active .container__open{
-	display: none;
-}

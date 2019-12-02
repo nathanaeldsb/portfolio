@@ -1,37 +1,36 @@
 /*FOOTER CSS START*/
 
 .footer {
-	position: fixed;
-	left: 0rem;
-	bottom: 0rem;
-	width: 100%;
-	background-color: red;
-	color: white;
-	text-align: right;
-	background-color: rgba(2, 2, 2, 0.44);
-	padding: 7px;
-	transition: opacity 1s;
-	opacity: 0.1;
-}
+  position: fixed;
+  left: 0rem;
+  bottom: 0rem;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: right;
+  background-color: rgba(2, 2, 2, 0.44);
+  padding: 7px;
+  transition: opacity 1s;
+  opacity: 0.1;
 
-.footer:hover {
-	opacity: 1;
-}
+  &:hover {
+    opacity: 1;
+  }
 
-.footer-icon {
-	display: inline;
-}
+  &-icon {
+    display: inline;
+  }
 
-.footer-button {
-	display: inline;
-	padding: 10px;
-}
+  &-button {
+    display: inline;
+    padding: 10px;
+  }
 
-.footer-btn {
-	text-align: center;
-	text-decoration: none;
-	color: white;
+  &-btn {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
 }
-
 
 /*FOOTER CSS END*/

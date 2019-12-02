@@ -1,45 +1,46 @@
 .item {
 	position: absolute;
+
+	&__radio {
+		display: none;
+	}
+	
+	&__image {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		opacity: 0.7;
+	}
+	
+	&__image:hover {
+		border-bottom: 1px solid white;
+		opacity: 1;
+		cursor: grab;
+	}
+	
+	&--mushrooms {
+		width: 5rem;
+		height: 5rem;
+		bottom: 4rem;
+		left: 26rem;
+		border-radius: 50%;
+	}
+	
+	&--mistletoe {
+		top: 4rem;
+		right: 20rem;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+	}
+	
+	&--gems {
+		position: absolute;
+		bottom: 2.4rem;
+		right: 3rem;
+		height: 4.5rem;
+		width: 4.5rem;
+		border-radius: 50%;
+	}
 }
 
-.item__radio {
-	display: none;
-}
-
-.item__image {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	opacity: 0.7;
-}
-
-.item__image:hover {
-	border-bottom: 1px solid white;
-	opacity: 1;
-	cursor: grab;
-}
-
-.item--mushrooms {
-	width: 5rem;
-	height: 5rem;
-	bottom: 4rem;
-	left: 26rem;
-	border-radius: 50%;
-}
-
-.item--mistletoe {
-	top: 4rem;
-	right: 20rem;
-	width: 5rem;
-	height: 5rem;
-	border-radius: 50%;
-}
-
-.item--gems {
-	position: absolute;
-	bottom: 2.4rem;
-	right: 3rem;
-	height: 4.5rem;
-	width: 4.5rem;
-	border-radius: 50%;
-}
