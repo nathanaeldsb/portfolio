@@ -184,20 +184,20 @@
                     </div>
 
                     <form class="form" action="" method="post">
-                        <div class="form--field">
+                        <div class="form__field">
                             <!-- <label for="username">Username:</label> -->
                             <input id="username" type="text" placeholder="Username" autocomplete="off" required
                                 disabled>
                         </div>
 
-                        <div class="form--field">
+                        <div class="form__field">
                             <!-- <label for="email">Your Email:</label> -->
                             <input id="email" type="email" placeholder="E-mail address" autocomplete="off" required
                                 disabled>
 
                         </div>
 
-                        <div class="form--field">
+                        <div class="form__field">
                             <!-- <label for="password">Password: </label>-->
                             <input id="password" type="password" name="password" placeholder="Password"
                                 autocomplete="off" required pattern=".{6,}"
@@ -205,7 +205,7 @@
 
                         </div>
 
-                        <input type="button" class="btn" id="formclassid" value="EXPLORE">
+                        <input type="button" class="form__btn" id="formclassid" value="EXPLORE">
                     </form>
                 </div>
             </section>
@@ -214,13 +214,19 @@
                 <div class="orstatement">
                     <p>OR LOG IN WITH</p>
                 </div>
-                <div class="fbbutton" title="facebook"><img class="fbbutton--img"
-                        src="./assets/img/fbcircleicon.png" alt="facebook logo"></div>
-                <div class="gmailbutton" title="gmail"><img class="gmailbutton--img"
-                        src="./assets/img/gmailicon.png" alt="gmail logo"></div>
+                <div class="login__facebook login__icons" title="facebook">
+                    <img class="login__facebook__img"
+                        src="./assets/img/fb_icon.png" 
+                        alt="facebook logo">
+                </div>
+                <div class="login__gmail login__icons" title="gmail">
+                    <img class="login__gmail__img"
+                        src="./assets/img/gmailicon.png" 
+                        alt="gmail logo">
+                </div>
             </section>
         </div>
-        <span class="modal__close" data-toggle="#login">&#9932;</span>
+        <span class="login__close" data-toggle="#login">&#9932;</span>
     </div>
 
     <!-- SIGN UP MODAL END -->

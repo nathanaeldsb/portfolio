@@ -15,160 +15,155 @@
   &.is-active {
     display: block;
   }
+
+  &__content {
+    position: absolute;
+    display: table;
+    table-layout: fixed;
+    height: 32rem;
+    width: 48rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__email {
+    width: 46%;
+    display: table-cell;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 2rem 0 0 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__socials {
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1rem;
+    border-radius: 0 2rem 2rem 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__paragraphe {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  &__icons{
+    position: absolute;
+    overflow: hidden;
+    height: 5.5rem;
+    width: 5.5rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: margin 0.5s ease;
+  }
+
+  &__facebook {
+    top: 30%;
+    left: 80%;
+    background-color: blue;
+    animation: floatfb 3s linear infinite;
+
+    &:hover {
+      margin-top: -1rem;
+      box-shadow: 1px 2px 20px 6px white;
+      opacity: 1;
+    }
+
+    &__img {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__gmail {
+    top: 70%;
+    left: 80%;
+    background-color: red;
+    animation: floatgmail 3s linear infinite;
+
+    &:hover {
+      margin-top: -1rem;
+      box-shadow: 1px 2px 20px 6px white;
+      opacity: 1;
+    }
+
+    &__img {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
 
-.login__content {
-  position: absolute;
-  display: table;
-  table-layout: fixed;
-  height: 32rem;
-  width: 48rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  border-radius: 2rem;
-  background-color: rgba(0, 0, 0, 0.7);
-}
+.form {
+  &__field {
+    padding-bottom: 1rem;
+  }
 
-.login__email {
-  width: 46%;
-  display: table-cell;
-  padding: 1rem;
-  margin-top: 2rem;
-  text-align: center;
-  border-radius: 2rem 0 0 2rem;
-  background-color: rgba(0, 0, 0, 0.4);
-}
+  &__field input {
+    height: 2rem;
+    width: 19rem;
+    color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 1rem;
+    background: rgba(192, 192, 192, 0.1);
+  }
 
-.login__socials {
-  width: 30%;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 1rem;
-  border-radius: 0 2rem 2rem 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
+  &__btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 15px 32px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(55, 174, 95, 0.5);
+    border: transparent;
+    border-radius: 200px;
+    transition-duration: 0.3s;
+  }
 
-.modal__close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  color: white;
-  font-size: 2rem;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.login__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.login__paragraphe {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
-.form--field {
-  padding-bottom: 1rem;
-}
-
-.form--field input {
-  height: 2rem;
-  width: 19rem;
-  color: white;
-  text-align: center;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid white;
-  border-radius: 1rem;
-  background: rgba(192, 192, 192, 0.1);
-}
-
-.btn {
-  display: block;
-  margin: 2rem auto 0;
-  padding: 15px 32px;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-  background-color: rgba(55, 174, 95, 0.5);
-  border: transparent;
-  border-radius: 200px;
-  transition-duration: 0.3s;
-}
-
-.btn:hover {
-  margin-top: 1.5rem;
-  background-color: rgba(82, 208, 18, 0.6);
-  box-shadow: 0 10px 20px rgba(247, 247, 247, 0.7);
-  /*cursor: pointer;*/
-}
-
-.fbbutton {
-  position: absolute;
-  overflow: hidden;
-  height: 5.5rem;
-  width: 5.5rem;
-  top: 30%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  text-align: center;
-  border-radius: 50%;
-  background-color: blue;
-  transition: margin 0.5s ease;
-  animation: floatfb 3s linear infinite;
-}
-
-.fbbutton--img {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.fbbutton:hover {
-  margin-top: -1rem;
-  box-shadow: 1px 2px 20px 6px white;
-  opacity: 1;
-}
-
-.gmailbutton {
-  position: absolute;
-  overflow: hidden;
-  height: 5.5rem;
-  width: 5.5rem;
-  top: 70%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  text-align: center;
-  border-radius: 50%;
-  background-color: red;
-  transition: margin 0.5s ease;
-  animation: floatgmail 3.1s linear infinite;
-}
-
-.gmailbutton--img {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.gmailbutton:hover {
-  margin-top: -1rem;
-  box-shadow: 1px 2px 20px 6px white;
-  opacity: 1;
+  &__btn:hover {
+    margin-top: 1.5rem;
+    background-color: rgba(82, 208, 18, 0.6);
+    box-shadow: 0 10px 20px rgba(247, 247, 247, 0.7);
+  }
 }
 
 .orstatement {
