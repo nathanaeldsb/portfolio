@@ -124,6 +124,14 @@
       object-fit: contain;
     }
   }
+
+  &__or-statement {
+    position: absolute;
+    height: 1rem;
+    width: 7rem;
+    top: 48%;
+    left: 57%;
+  }  
 }
 
 .form {
@@ -164,12 +172,4 @@
     background-color: rgba(82, 208, 18, 0.6);
     box-shadow: 0 10px 20px rgba(247, 247, 247, 0.7);
   }
-}
-
-.orstatement {
-  position: absolute;
-  height: 1rem;
-  width: 7rem;
-  top: 48%;
-  left: 57%;
 }
